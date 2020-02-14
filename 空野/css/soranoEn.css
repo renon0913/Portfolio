@@ -1,0 +1,380 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
+}
+
+
+body.fadeout::after {
+  opacity: 1;
+}
+ 
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+.BackImg {
+  background-repeat: no-repeat;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 2000px;
+  height: 1100px;
+  filter: blur( 3px);
+  background-size: cover;
+  z-index: -1;
+}
+
+
+.FrontImg {
+  background-color: #000;
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+
+.FrontLogo {
+  background: url(../img/logo.jpg);
+  background-size: cover;
+  position: absolute;
+
+  border: 10px solid #ffffff;
+  box-sizing: border-box;
+  width: 225px;
+  height: 225px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+
+#MainContents {
+  background: rgba( 0, 0, 0, 0.5);
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+header {
+  position: relative;
+
+  width: 1200px;
+  height: 120px;
+}
+
+
+header .logo {
+  background: url(../img/logo.jpg);
+  background-size: cover;
+
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+}
+
+
+header .navi {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 1080px;
+  height: 120px;
+}
+
+
+ul {
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  display: table-cell;
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.navi li :hover {
+  color: #aaa;
+  transition: all 0.2s ease-in-out;
+}
+
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+
+.home, 
+.shop,
+.menu {
+  width: 1200px;
+  height: 730px;
+}
+
+
+.home1 {
+  text-align: start;
+  width:  850px;
+  height: 710px;
+  padding: 10px;
+
+
+  font-size: 22px;
+  line-height: 2em;
+}
+
+
+.midasi,
+.title {
+    display: table-cell;
+    vertical-align: middle;
+  
+    width: 1200px;
+    height: 70px;
+}
+
+
+.shop1 {
+  display: flex;
+
+  width: 1200px;
+  height: 550px;
+}
+
+
+.shop1-1 {
+  width: 860px;
+  height: 550px;
+}
+
+
+.shop1-1-1 {
+  position: relative;
+
+  width: 860px;
+  height: 550px;
+}
+
+
+.shopImg,
+.shopAPI {
+  position: absolute;
+  border: 5px solid #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 750px;
+  height: 510px;
+  margin: auto;
+}
+
+
+.shop2 {
+  width:  340px;
+  height: 550px;
+}
+
+
+#infor {
+  width:  300px;
+  height: 510px;
+  padding: 20px;
+  margin: auto;
+
+  text-align: start;
+}
+
+
+.shop3 {
+  width: 1200px;
+  height: 90px;
+}
+
+
+.change {
+  width: 860px;
+  height: 80px;
+}
+
+.change li {
+  display: inline-block;
+}
+
+
+.shop3-1 {
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  height: 60px;
+  width: 230px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+.shop3-1 p {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0;
+}
+
+
+.shop3-1:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+.menu1 {
+  display: flex;
+
+  width: 1200px;
+  height: 640px;
+}
+
+
+.menu1-1 {
+  width: 1100px;
+  height: 400px;
+
+  margin: auto;
+}
+
+
+.menuTable {
+  background: url(../img/menu1.jpg);
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+
+.menuBack {
+  background: url(../img/menu2.jpg);
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+
+.shiori {
+  background: url(../img/shiori.jpg);
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+
+.wasi {
+  background: url(../img/wasi.jpg);
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  color: #000;
+}
+
+.wasiTitle {
+  width: 550px;
+  height: 70px;
+
+}
+
+.wasiTitle h2 {
+  line-height: 70px;
+  margin: 0;
+}
+
+.wasiMenu {
+  width: 420px;
+  height: 320px;
+  text-align: start;
+  display: inline-block;
+}
+
+.wasiMoney {
+  width: 70px;
+  height: 320px;
+  display: inline-block;
+  margin: 0;
+}
+
+.wasiWine1 {
+  width: 360px;
+  height: 320px;
+  text-align: start;
+  display: inline-block;
+  margin: 0;
+}
+
+.wasiWine2 {
+  width: 200px;
+  height: 320px;
+  text-align: end;
+  display: inline-block;
+}
+
+
+.wasi p {
+  font-size: 14px;
+  line-height: 2em;
+  margin: 20px 10px;
+}
